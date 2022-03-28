@@ -1,0 +1,23 @@
+html, body {width: 100vw; height: 100vh; overflow: hidden;}
+section {background-color: gray; width: 100vw; height: 100vh;}
+img {-webkit-user-drag: none; width: 100%;}
+
+.textBox {position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%);}
+.textBox .team {display: inline-block; width: auto; padding: calc(100vw * 14 / 1920) calc(100vw * 23 / 1920); text-align: center; background-color: #A50034; border-radius: calc(100vw * 60 / 1920); color: #fff; font-size: calc(100vw * 20 / 1920); font-weight: bold; margin-bottom: calc(100vw * 20 / 1920);}
+.textBox .name {font-size: calc(100vw * 40 / 1920); font-weight: bold; color: #fff;}
+.speechBubble {position: relative; width: calc(100vw * 239 / 1920); height: calc(100vw * 135 / 1920); background-image: url('../img/speechBubble.png'); vertical-align: middle;}
+.speechBubble h6 {position: absolute; top: 39%; left: 50%; width: 100%; transform: translate(-50%, -50%); text-align: center; margin: 0 auto; font-size: calc(100vw * 23 / 1920); font-weight: bold;}
+
+.rotating-slider {position: relative; top: 15%; left: 23%; width: 80%; z-index: 200;}
+.rotating-slider ul.direction-controls {list-style: none; margin: 0; padding: 0;}
+.rotating-slider ul.direction-controls li.left-arrow {position: absolute; top: 50%; right: 100%; transform: translateY(-50%);}
+.rotating-slider ul.direction-controls li.right-arrow {position: absolute; top: 50%; left: 100%; transform: translateY(-50%);}
+.rotating-slider ul.direction-controls li button {background: rgba(0, 0, 0, 0.2); border: none; color: #fff; cursor: pointer; font-size: 1.5em; font-weight: bold; height: 1.5em; line-height: 1.5em; padding: 0; text-align: center; transition: background 0.25s; width: 1.5em;}
+.rotating-slider ul.direction-controls li button:hover {background: rgba(0, 0, 0, 0.6);}
+.rotating-slider ul.slides {height: 100%; margin: 0; overflow: hidden; padding: 0; position: relative; top: 0; left: 50%; transform: translateX(-50%) rotate(0); transform-origin: center center; width: 100%;}
+.rotating-slider ul.slides li {transition: all ease-in-out 0.3s; background-position: center; background-size: cover !important; display: inline-block; list-style: none; position: absolute; top: 0; left: 50%; text-align: center; transform-origin: bottom center; width: 20%; height: 20%; transform: rotate(30deg);}
+.rotating-slider ul.slides li .inner {box-sizing: border-box; height: 100%; width: 100%;}
+
+.active-slide {width: 22% !important; height: 22% !important;}
+.second-slide {width: 20% !important; height: 20% !important;}
+.third-slide {width: 10% !important; height: 10% !important;}

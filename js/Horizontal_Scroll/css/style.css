@@ -1,0 +1,473 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.var-wrap {
+    width: 400vw;
+    height: 100%;
+}
+
+.serviceDes {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+
+.clear ::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.strokeSvgP2 {
+    position: absolute;
+    top: 755px;
+    left: -368px;
+  }
+
+.svg13 {
+    z-index: -10;
+    animation-name: move13;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    left: -125px;
+  }
+  
+  @keyframes move13 {
+    from {
+      top: 857px;
+    }
+    to {
+      top: 757px;
+    }
+  }
+  
+  .svg14 {
+    z-index: -10;
+    animation-name: move14;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -156px;
+  }
+  
+  @keyframes move14 {
+    from {
+      top: 510px;
+    }
+    to {
+      top: 610px;
+    }
+  }
+
+  .svgP6 {
+    z-index: -10;
+    animation-name: movep6;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -550px;
+  }
+  
+  @keyframes movep6 {
+    from {
+      top: -255px;
+    }
+    to {
+      top: -155px;
+    }
+  }
+
+  .strokeSvgP3 {
+    position: absolute;
+    top: 163px;
+    right: -153px;
+  }
+
+  .svgP7 {
+    z-index: -10;
+    animation-name: movep7;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -239px;
+  }
+  
+  @keyframes movep7 {
+    from {
+      top: 683px;
+    }
+    to {
+      top: 783px;
+    }
+  }
+
+  .svgP8 {
+    z-index: -10;
+    animation-name: movep8;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -172px;
+  }
+  
+  @keyframes movep8 {
+    from {
+      top: -90px;
+    }
+    to {
+      top: -80px;
+    }
+  }
+
+  .svgP9 {
+    z-index: -10;
+    animation-name: movep9;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -238px;
+  }
+  
+  @keyframes movep9 {
+    from {
+      top: 711px;
+    }
+    to {
+      top: 811px;
+    }
+  }
+
+  .svgP10 {
+    z-index: -10;
+    animation-name: movep10;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -430px;
+  }
+  
+  @keyframes movep10 {
+    from {
+      top: -243px;
+    }
+    to {
+      top: -143px;
+    }
+  }
+  
+  .svgP11 {
+    z-index: -10;
+    animation-name: movep11;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    right: -182px;
+  }
+  
+  @keyframes movep11 {
+    from {
+      top: 778px;
+    }
+    to {
+      top: 678px;
+    }
+  }
+  
+  .service {
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    top: 457px;
+    left: 135px;
+    line-height: 1.5em;
+  }
+  
+  .service h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .gooey1{
+    background-image: linear-gradient(120deg, #115C9E 0%, #82C5FF 100%);
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    width: 590px; height: 590px;
+    animation: morph 3s linear infinite; 
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    will-change: border-radius;
+    position: absolute;
+    top: 230px;
+    left: 598px;
+  }
+  .gooey1:before,
+  .gooey1:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.21);
+    will-change: border-radius, transform, opacity;
+    animation-delay: 200ms;
+    background-image: linear-gradient(120deg, #82C5FF 0%, #115C9E 100%);
+  }
+  
+  .gooey1:before{
+    animation: morph 5s linear infinite;
+    opacity: .21;
+    animation-duration: 1.5s;
+  }
+  
+  .gooey1:after{
+    animation: morph 5s linear infinite;
+    animation-delay: 400ms;
+    opacity: .89;
+    content: "";
+    line-height: 120px;
+    text-indent: -21px;
+  }
+  
+  @keyframes morph{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      opacity: .89;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+
+  .gooey2{
+    background-image: linear-gradient(120deg, #82C5FF 0%, #cbe7ff 100%);
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    width: 590px; height: 590px;
+    animation: morph 3s linear infinite; 
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    will-change: border-radius;
+    position: absolute;
+    top: 230px;
+    left: 598px;
+  }
+  .gooey2:before,
+  .gooey2:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.21);
+    will-change: border-radius, transform, opacity;
+    animation-delay: 200ms;
+    background-image: linear-gradient(120deg, #82C5FF 0%, #368ad4 100%);
+  }
+  
+  .gooey2:before{
+    animation: morph 5s linear infinite;
+    opacity: .21;
+    animation-duration: 1.5s;
+  }
+  
+  .gooey2:after{
+    animation: morph 5s linear infinite;
+    animation-delay: 400ms;
+    opacity: .89;
+    content: "";
+    line-height: 120px;
+    text-indent: -21px;
+  }
+  
+  @keyframes morph{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      opacity: .89;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+
+  .gooey3{
+    background-image: linear-gradient(120deg, #cbe7ff 0%, #e7f4ff 100%);
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    width: 590px; height: 590px;
+    animation: morph 3s linear infinite; 
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    will-change: border-radius;
+    position: absolute;
+    top: 230px;
+    left: 598px;
+  }
+  .gooey3:before,
+  .gooey3:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.21);
+    will-change: border-radius, transform, opacity;
+    animation-delay: 200ms;
+    background-image: linear-gradient(120deg, #cbe7ff 0%, #82C5FF 100%);
+  }
+  
+  .gooey3:before{
+    animation: morph 5s linear infinite;
+    opacity: .21;
+    animation-duration: 1.5s;
+  }
+  
+  .gooey3:after{
+    animation: morph 5s linear infinite;
+    animation-delay: 400ms;
+    opacity: .89;
+    content: "";
+    line-height: 120px;
+    text-indent: -21px;
+  }
+  
+  @keyframes morph{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      opacity: .89;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+
+  .gooey4{
+    background-image: linear-gradient(120deg, #e7f4ff 0%, #e2f1ff 100%);
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    width: 590px; height: 590px;
+    animation: morph 3s linear infinite; 
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    will-change: border-radius;
+    position: absolute;
+    top: 230px;
+    left: 598px;
+  }
+  .gooey4:before,
+  .gooey4:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.21);
+    will-change: border-radius, transform, opacity;
+    animation-delay: 200ms;
+    background-image: linear-gradient(120deg, #e2f1ff 0%, #cbe7ff 100%);
+  }
+  
+  .gooey4:before{
+    animation: morph 5s linear infinite;
+    opacity: .21;
+    animation-duration: 1.5s;
+  }
+  
+  .gooey4:after{
+    animation: morph 5s linear infinite;
+    animation-delay: 400ms;
+    opacity: .89;
+    content: "";
+    line-height: 120px;
+    text-indent: -21px;
+  }
+  
+  @keyframes morph{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      opacity: .89;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+  
+  .iphoneMiddle {
+    z-index: 200;
+    position: absolute;
+    top: 100px;
+    left: 675px;
+    display: inline-block;
+  }
+  
+  .task {
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    top: 361px;
+    right: 160px;
+    line-height: 1.5em;
+  }
+  
+  .task li {
+    margin-bottom: 70px;
+  }
+  
+  .task h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  } 
